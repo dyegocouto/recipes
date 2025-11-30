@@ -5,3 +5,21 @@
   flex-direction: column;
   align-items: center;
 }
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  width: 120px;
+  width: max(120px, 10vw);
+}
+
+.header__title {
+  font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+    cursive;
+  font-weight: normal;
+}
