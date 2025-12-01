@@ -23,3 +23,45 @@
     cursive;
   font-weight: normal;
 }
+
+.cards {
+  width: min(80ch, 100vw - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.card {
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  max-width: 65ch;
+}
+
+.card__img {
+  border-radius: 8px;
+  max-height: 100%;
+}
+
+.card__desc {
+  font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: clamp(15px, 3vw, 20px);
+}
+
+.card__para {
+  margin: 0;
+  font-size: clamp(12px, 3.5vw, 16px);
+}
