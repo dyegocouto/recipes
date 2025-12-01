@@ -4,6 +4,10 @@ body {
 
 :root {
   --primary-text-color: #333;
+  --header-font: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+    cursive;
+  --content-font: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif;
 }
 
 .page__container {
@@ -28,8 +32,7 @@ body {
 
 .header__title {
   color: var(--primary-text-color);
-  font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
-    cursive;
+  font-family: var(--header-font);
   font-weight: normal;
 }
 
@@ -57,8 +60,7 @@ body {
 
 .card__desc {
   color: var(--primary-text-color);
-  font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif;
+  font-family: var(--content-font);
   font-weight: normal;
   display: flex;
   flex-direction: column;
