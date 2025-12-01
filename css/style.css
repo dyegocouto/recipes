@@ -15,7 +15,7 @@
 
 .header__logo {
   width: 120px;
-  width: max(120px, 10vw);
+  width: max(110px, 7vw);
 }
 
 .header__title {
