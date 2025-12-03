@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+:root {
+  --primary-text-color: #333;
+  --header-font: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+    cursive;
+  --content-font: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif;
+}
+
+.page__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  width: 120px;
+  width: max(110px, 7vw);
+}
+
+.header__title {
+  color: var(--primary-text-color);
+  font-family: var(--header-font);
+  font-weight: normal;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe {
+  font-family: var(--content-font);
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: min(80ch, 100vw - 2rem);
+}
+
+.recipe__img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.recipe__subtitle {
+  margin: 0;
+  font-size: clamp(15px, 3vw, 20px);
+}
+
+.recipe__list {
+  padding-left: 20px;
+}
+
+.home {
+  &:link {
+    font-family: var(--content-font);
+    color: #333;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:visited {
+    color: #333;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  font-family: var(--content-font);
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px;
+}
+
+.footer__list {
+  width: min(80ch, 100vw - 2rem);
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  max-width: 65ch;
+}
+
+.footer__item {
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  & > a:link {
+    color: #333;
+    text-decoration: none;
+  }
+
+  & > a:visited {
+    color: #333;
+  }
+}
