@@ -20,3 +20,21 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  width: 120px;
+  width: max(110px, 7vw);
+}
+
+.header__title {
+  color: var(--primary-text-color);
+  font-family: var(--header-font);
+  font-weight: normal;
+}
