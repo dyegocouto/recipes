@@ -39,3 +39,34 @@ body {
   font-family: var(--header-font);
   font-weight: normal;
 }
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe {
+  font-family: var(--content-font);
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: min(80ch, 100vw - 2rem);
+}
+
+.recipe__img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.recipe__subtitle {
+  margin: 0;
+  font-size: clamp(15px, 3vw, 20px);
+}
+
+.recipe__list {
+  padding-left: 20px;
+}
