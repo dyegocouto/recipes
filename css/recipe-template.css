@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -69,6 +70,23 @@ body {
 
 .recipe__list {
   padding-left: 20px;
+}
+
+.home {
+  &:link {
+    font-family: var(--content-font);
+    color: #333;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:visited {
+    color: #333;
+  }
 }
 
 .footer {
