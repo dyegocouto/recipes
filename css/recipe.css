@@ -39,6 +39,7 @@ body {
 }
 
 .header__title {
+  font-family: var(--font-display);
   font-weight: normal;
 }
 
