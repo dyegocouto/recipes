@@ -1,18 +1,22 @@
+:root {
+  --bg-main: #fafafa;
+  --bg-alt: #f2f2f2;
+  --text-main: #333;
+  --font-body: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif;
+  --font-display: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+    cursive;
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  background-color: #fafafa;
-}
-
-:root {
-  --primary-text-color: #333;
-  --header-font: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
-    cursive;
-  --content-font: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
 }
 
 .page__container {
@@ -36,8 +40,6 @@ body {
 }
 
 .header__title {
-  color: var(--primary-text-color);
-  font-family: var(--header-font);
   font-weight: normal;
 }
 
@@ -49,7 +51,6 @@ body {
 }
 
 .recipe {
-  font-family: var(--content-font);
   padding: 5px 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -74,7 +75,6 @@ body {
 
 .home {
   &:link {
-    font-family: var(--content-font);
     color: #333;
     margin-top: 20px;
     text-decoration: none;
@@ -92,8 +92,7 @@ body {
 .footer {
   margin-top: 20px;
   width: 100%;
-  font-family: var(--content-font);
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--bg-alt);
   padding: 10px;
 }
 
