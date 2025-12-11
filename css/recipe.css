@@ -28,7 +28,7 @@ body {
 }
 
 .header {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ body {
 }
 
 .recipe {
-  padding: 5px 15px;
+  padding: .3125rem .9375rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: min(80ch, 100vw - 2rem);
@@ -59,17 +59,17 @@ body {
 .recipe__img {
   max-width: 100%;
   display: block;
-  margin: 10px auto;
-  border-radius: 8px;
+  margin: .625rem auto;
+  border-radius: .5rem;
 }
 
 .recipe__subtitle {
   margin: 0;
-  font-size: clamp(15px, 3vw, 20px);
+  font-size: clamp(.9375rem, 3vw, 1.25rem);
 }
 
 .recipe__list {
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 .home-link {
