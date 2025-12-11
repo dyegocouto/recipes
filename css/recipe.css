@@ -72,20 +72,14 @@ body {
   padding-left: 20px;
 }
 
-.home {
-  &:link {
-    color: #333;
-    margin-top: 20px;
-    text-decoration: none;
-  }
+.home-link {
+  margin-top: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
 
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  &:visited {
-    color: #333;
-  }
+.home-link:hover {
+  transform: scale(1.05);
 }
 
 .footer {
