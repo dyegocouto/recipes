@@ -35,8 +35,7 @@ body {
 }
 
 .header__logo {
-  width: 120px;
-  width: max(110px, 7vw);
+  width: max(6.25rem, 6.5vw);
 }
 
 .header__title {
