@@ -53,12 +53,23 @@ body {
 }
 
 .card {
+  text-decoration: none;
   height: 150px;
   border: 1px solid #ccc;
   border-radius: 8px;
   display: flex;
   gap: 20px;
   max-width: 65ch;
+}
+
+.card:hover {
+  transform: translateX(-20px);
+  transition: transform ease 0.1s;
+}
+
+.card:active {
+  transform: translateX(-40px);
+  transition: transform ease 0.1s;
 }
 
 .card__img {
