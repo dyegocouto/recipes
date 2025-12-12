@@ -51,26 +51,27 @@ body {
 }
 
 .recipe {
-  padding: .3125rem .9375rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: min(80ch, 100vw - 2rem);
 }
 
 .recipe__img {
-  max-width: 100%;
+  width: 100%;
   display: block;
-  margin: .625rem auto;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+}
+
+.recipe__content {
+  padding: 15px;
 }
 
 .recipe__subtitle {
   margin: 0;
-  font-size: clamp(.9375rem, 3vw, 1.25rem);
+  font-size: clamp(0.9375rem, 3vw, 1.25rem);
 }
 
 .recipe__list {
-  padding-left: 1.25rem;
+  max-width: 60ch;
 }
 
 .home-link {
