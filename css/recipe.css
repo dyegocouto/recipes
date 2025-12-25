@@ -53,6 +53,8 @@ body {
 .recipe {
   border: 1px solid #ccc;
   border-radius: 8px;
+  margin: 0 10px;
+  max-width: 65ch;
 }
 
 .recipe__img {
@@ -67,11 +69,11 @@ body {
 
 .recipe__subtitle {
   margin: 0;
-  font-size: clamp(0.9375rem, 3vw, 1.25rem);
+  font-size: clamp(16px, 3vw, 1.25rem);
 }
 
 .recipe__list {
-  max-width: 60ch;
+  padding-left: 20px;
 }
 
 .home-link {
@@ -92,13 +94,12 @@ body {
 }
 
 .footer__list {
-  max-width: 65ch;
   padding: 0;
+  margin: 0;
   list-style-type: none;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  gap: min(3.125rem, 10vw);
 }
 
 .footer__list > li:hover {
